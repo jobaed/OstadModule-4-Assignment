@@ -1,5 +1,13 @@
 <?php
 
+/*
+*
+*   Write a PHP function to check if a 
+*   string contains only letters and whitespace.
+*
+**/
+
+
 function isWhitespaceAndChar($string){
     return preg_match('/^[a-zA-Z\s]+$/', $string);
 }

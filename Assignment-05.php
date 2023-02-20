@@ -1,5 +1,12 @@
 <?php
 
+/*
+*
+*   Write a PHP function to find the second largest 
+*   number in an array of numbers.
+*
+**/
+
 function findSecondLargeNumber($array){
     sort($array);
     $index =  count($array)-2;

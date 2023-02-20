@@ -1,11 +1,19 @@
 <?php
 
+/*
+*
+*   Write a PHP function to sort an array of strings by their length,
+*   in ascending order. (Hint: You can use the usort() function to 
+*   define a custom sorting function.)
+*
+**/
+
 function Order($str1, $str2)    // Callback Function For usort.
 {
-    return strlen($str2) - strlen($str1);
+    return strlen($str1) - strlen($str2);
 }
 
-function sortString($strings)   // Sort elements as ascending order using usot.
+function sortStringArray($strings)   // Sort elements as ascending order using usot.
 {
     usort($strings, "Order");
     return $strings;
